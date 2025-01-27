@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a>This is IndexPage</a><br>
+    <p>Name is : <span th:text="${#strings.toUpperCase(name)}"></span></p>
+    <div th:with="a=11,b=6">
+        <h1>Sum of <span th:text="${a}" /> and <span th:text="${b}"/> is <span th:text="${a+b}"></span></h1>
+    </div>
+</body>
+</html>

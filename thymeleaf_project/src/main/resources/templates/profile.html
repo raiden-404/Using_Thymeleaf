@@ -1,0 +1,91 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile</title>
+<style>
+    /* General styles */
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #89f7fe, #66a6ff);
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 400px;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        color: #444;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        color: #555;
+        margin: 10px 0;
+    }
+
+    a {
+        display: inline-block;
+        font-size: 1rem;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-top: 20px;
+        color: #fff;
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    a:hover {
+        background: linear-gradient(135deg, #feb47b, #ff7e5f);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-2px);
+    }
+
+    a:active {
+        transform: scale(0.98);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Welcome</h3>
+        <h4>Email: </h4>
+        <h4>Gender:</h4>
+        <h4>City: </h4>
+        <a href="logout.jsp">Logout</a>
+    </div>
+</body>
+</html>
